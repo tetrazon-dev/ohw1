@@ -1,0 +1,35 @@
+<%- include("partials/header", { bot, user, path, title: "Home" }) %>
+<html>
+  <head>
+    <link href="https://ohw.glitch.me/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <link href="dashboard/css/dashboard.css" rel="stylesheet" />
+
+
+   <%if(user) {%>
+
+     <a href="/logout"> <div class="cikis">Çıkış</div></a>    
+     <a href='/dashboard'>Panel</a>
+ 
+   <div class='cizgidiv1'></div>
+     <%} else {%>
+  <a href="/login"> <div class='giris'> Giriş  </div> </a>
+        
+    <%}%>
+   
+ <div class='aa'>
+   <p>sa </p>
+  </div>
+  <style>
+    body{
+    background-color:gray;  
+    }
+  </style>
+
+
+  <body>
+  </body>
+  <%- include("partials/footer") %>
+</html>
